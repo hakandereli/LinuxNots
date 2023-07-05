@@ -1,0 +1,99 @@
+Windows ve Linux komutları arasındaki bazı farklar:
+
+1-Komut Satırı Arayüzü:
+Windows: Command Prompt (cmd), PowerShell
+Linux: Bash (Bourne Again Shell), Shell (Bash dışında farklı shell'ler de kullanılabilir)
+
+
+2-Komut Ayracı:
+Windows: ""
+Linux: "/"
+
+3-Komut Yazımı:
+Windows komutları genellikle büyük/küçük harf duyarlı değildir. Örneğin, "dir" ve "DIR" aynı komutu ifade eder.
+Linux komutları genellikle küçük harf duyarlıdır. "ls" ve "LS" farklı komutları temsil edebilir.
+
+4-Dosya Yolları:
+Windows: Dosya yollarında sürücü harfi (C:, D:, vb.) kullanılır. Örneğin, "C:\Users\KullaniciAdi\Desktop".
+Linux: Dosya yollarında kök dizin ("/") başvuru yapılır ve ilgili dizinlerin yolu belirtilir. Örneğin, "/home/kullanici_adi/masaustu".
+
+5-Dosya İsimleri:
+Windows: Dosya ve klasör isimleri büyük/küçük harf duyarlı değildir. "dosya.txt" ve "Dosya.txt" aynı dosyayı ifade eder.
+Linux: Dosya ve klasör isimleri büyük/küçük harf duyarlıdır. "dosya.txt" ve "Dosya.txt" farklı dosyaları ifade edebilir.
+
+6-Yardım ve Dökümantasyon:
+Windows: Komutların kullanımı için "/?" veya "help" komutu kullanılabilir.
+Linux: Komutların kullanımı için "--help" veya "-h" seçeneği kullanılabilir.
+
+Komutların Örnek Kullanımları:
+
+pwd(print working directory): bulunduğun konumu gösterir
+clear: linux ekranı temizle
+cls: Ekranı temizle
+
+TAB : tamamlar
+büyük küçük harf duyarlıdır başta veya sonda slash isteyebilir.
+
+linux de slash lar / sağa yatık
+windows da slashlar \ sola yatık olur yol belirtirken.
+..\ windows üst dizindeki dosyaya erişim
+../ linux de üst klasör deki dosyaya erişim
+
+
+cd: "Change Directory" (Dizin Değiştir) anlamına gelir. Kullanıcıyı belirtilen bir dizine yönlendirir.
+cd .. : bir üst klasöre çık
+
+ls: "List" (Listele) anlamına gelir. Bir dizindeki dosyaları ve alt dizinleri listeler.
+dir: windows
+
+mkdir: "Make Directory" (Dizin Oluştur) anlamına gelir. Belirtilen bir isimle yeni bir dizin oluşturur.
+
+touch not.txt : Linux/Unix dosya oluşturur. bulunduğun dizinde 
+touch /path/to/dosya.txt: hedef dizinde
+echo. > not.txt: windows da dosya oluşturma
+echo. > C:\path\to\dosya.txt : hedef dizinde
+
+mv: "Move" (Taşı) anlamına gelir. Dosyaları taşır veya yeniden adlandırır.
+mv eski_dosya.txt yeni_dosya.txt
+mv eski_klasör_adı yeni_klasör_adı
+mv eski_dosya.txt /yeni/klasor/yeni_dosya.txt
+
+move : windows için
+move eski_dosya.txt yeni_dosya.txt
+move eski_klasör_adı yeni_klasör_adı
+move eski_dosya.txt C:\yeni\klasor\yeni_dosya.txt
+
+rm: "Remove" (Sil) anlamına gelir. Dosyaları veya dizinleri siler.
+
+linux silme
+rmdir bos_klasor veya rm -rf bos_klasor
+rm not.txt
+rm -r dolu_klasor
+
+windows silme
+del deneme.txt
+rmdir bos_klasor
+rmdir /s dolu_klasor: dolu klasör siler y/n izin sorar
+
+
+cp: "Copy" (Kopyala) anlamına gelir. Dosyaları kopyalar.
+
+linux kopyalama
+cp dosya.txt yeni_dosya.txt
+cp -r kaynak_klasor hedef_klasor
+
+
+windows kopyalama
+copy dosya.txt yeni_dosya.txt
+xcopy kaynak_klasör hedef_klasör /E /I
+xcopy C:\KaynakKlasor D:\HedefKlasor /E /I
+
+ /E seçeneği, klasör içeriğini de kopyalamak için kullanılır. 
+ /I seçeneği ise hedef klasörün var olup olmadığını kontrol eder ve gerekirse onay ister.
+
+cat: "Concatenate" (Birleştir) anlamına gelir. Bir veya daha fazla dosyanın içeriğini birleştirir ve görüntüler.
+grep: "Global Regular Expression Print" (Genel Düzenli İfade Yazdır) anlamına gelir. Bir metin dosyasında belirli bir düzenli ifadeyi arar ve sonuçları görüntüler.
+chmod: "Change Mode" (Mod Değiştir) anlamına gelir. Dosya veya dizinin izinlerini değiştirir.
+sudo: "Superuser Do" (Süper Kullanıcı Yap) anlamına gelir. Bir komutu yönetici veya süper kullanıcı olarak çalıştırır.
+apt-get: "Advanced Packaging Tool" (Gelişmiş Paketleme Aracı) anlamına gelir. Debian tabanlı Linux dağıtımlarında paket yönetimi için kullanılır.
+yum: CentOS ve Red Hat tabanlı Linux dağıtımlarında paket yönetimi için kullanılır.
