@@ -44,10 +44,14 @@ cd: "Change Directory" (Dizin Değiştir) anlamına gelir. Kullanıcıyı belirt
 cd .. : bir üst klasöre çık
 
 ls: "List" (Listele) anlamına gelir. Bir dizindeki dosyaları ve alt dizinleri listeler.
+-la kullanarak gizli öğeleri de listeyebilirsin.
+
 dir: windows
+dir /a : gizli öğeleri de göster.
 
 mkdir: "Make Directory" (Dizin Oluştur) anlamına gelir. Belirtilen bir isimle yeni bir dizin oluşturur.
 
+ *****Dosya Oluşturma*****
 touch not.txt : Linux/Unix dosya oluşturur. bulunduğun dizinde 
 touch /path/to/dosya.txt: hedef dizinde
 echo. > not.txt: windows da dosya oluşturma
